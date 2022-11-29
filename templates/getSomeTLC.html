@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+{% block content %}
+    {% for post in posts %}
+        <p> On this day: {{ post.date}} </p>
+        <p> I did this: {{ post.deed }}</p>
+        <h1> and thats why: I am fucking amazing</h1>
+    {% endfor %}
+{% endblock content%}

@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+    {% block content %}
+        <h1>Welcome darling!!!</h1>
+        <h2>lets get you pampered!</h2>
+        <img class="img-fluid" src="static/Trex.jpg" alt="TRex">
+        <h3> tell the dinosaurs what you did today </h3>
+        <p>   nothing is to small a deed: <br>
+            you woke up? <br>
+            you opened your eyes? <br>
+            you opend this page? <br> 
+            Thats allready three things! <br>
+            Put it in there!!!! The sky is the limit!</p>
+        <br>
+        <form action="" method="post">
+        <input type="'text" placeholder="what I did today" name="deed"       value=" {{ request.form.username }}"><br><br>
+      
+        <input class="Button" type="submit" value="Tell the world">
+        </form>
+   
+{% endblock content%}
+ 
+ 
+ 
+ 
+
+
