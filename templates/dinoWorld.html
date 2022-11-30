@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<header>
+    <!-- Jumbotron -->
+ <div class="p-5 text-center bg-dark">
+   <h1 class="mb-3 bg-dark">Welcome to your Dinosaure World !!!</h1>
+   <h4 class="mb-3 bg-dark">here you are remembered and your deeds are not forgotten!</h4>
+ </div>
+ 
+    {% for post in posts %}
+
+   
+     <!-- Jumbotron -->
+   </header>
+        <p> On this day: {{ post.date}} </p>
+        <p> I did this: {{ post.deed }}</p>
+        <h1> and thats why: I am fucking amazing</h1>
+    {% endfor %}
+{% endblock content%}

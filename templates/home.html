@@ -1,21 +1,61 @@
 {% extends "layout.html" %}
     {% block content %}
-        <h1>Welcome darling!!!</h1>
-        <h2>lets get you pampered!</h2>
-        <img class="img-fluid" src="static/Trex.jpg" alt="TRex">
-        <h3> tell the dinosaurs what you did today </h3>
-        <p>   nothing is to small a deed: <br>
+   <header>
+     <!-- Jumbotron -->
+  <div class="p-5 text-center bg-dark">
+    <h1 class="mb-3 bg-dark">Welcome! Have one of those days???</h1>
+    <h4 class="mb-3 bg-dark">lets get you pampered!</h4>
+  </div>
+  <!-- Jumbotron -->
+</header>
+
+<main class="row">
+
+    <div  class="col-3 mt-3 pe-1 ps-1">
+    <p>
+    <button class="btn btn btn-outline-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        how to use this
+      </button>
+    </p>
+<div class="collapse" id="collapseExample">
+    <div class="ps-3 card card body">
+       Have one of those days???? <br>
+         the ones where getting out of bed is allready taking all your strength <br>
+       .... and you do not feel good about your self. <br>
+       well.... granny Dinosaur got you!!!
+        You can tell the dino what you did today and get some dino loving. 
+        If you have a really bad day and you need more then just some Dino TLS. Here you can find someone to talk to:
+        Numbers Links
+    </div>
+</div>
+</div>
+
+    <div class="col-6 mt-5">   
+    
+            <h3> tell the dinosaurs what you did today </h3>
+        <p class="fs-3">   nothing is to small a deed: <br>
             you woke up? <br>
             you opened your eyes? <br>
             you opend this page? <br> 
             Thats allready three things! <br>
-            Put it in there!!!! The sky is the limit!</p>
+            Put it in the field below!!!! The sky is the limit!</p>
         <br>
-        <form action="" method="post">
-        <input type="'text" placeholder="what I did today" name="deed"       value=" {{ request.form.username }}"><br><br>
-      
-        <input class="Button" type="submit" value="Tell the world">
-        </form>
+        Today I ...... <br><br>
+        <form action="{{ url_for('getSomeTLC') }}" method="post">
+            <input type="text" class="name-input name mb-3" id="name" name="name">  
+          
+            <input class="btn btn-outline-dark" type="submit" value="Tell T-Rex">
+            </form>
+    </div>
+
+
+    <figure class="figure col-3 mt-3 ps-0 ms-0 pe-3">
+        <img class="img-fluid" src="static/T-RexNightsky.jpg" alt="TRex Photo by Jake Fagan">
+        <figcaption class="figure-caption">
+            by Jake Fagan on Unsplash
+        </figcaption>
+    </figure>
+</main>
    
 {% endblock content%}
  

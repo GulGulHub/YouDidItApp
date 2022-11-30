@@ -1,6 +1,15 @@
 *{
+    background-color: deeppink;
+}
+
+header{
+    color: deeppink;
+}
+
+main{
     background-color:  deeppink;
     text-align: center;
+
 }
 
 img{
@@ -8,6 +17,23 @@ img{
     height: 300px;
 }
 
+.prettyPlaceholder{
+    background-color: black;
+    border: 3px solid rgb(0, 0, 0); 
+    color:deeppink;  
+}
+
+.input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: deeppink !important;
+  
+    }
+
+.container{
+    border: 5px solid black;
+    border-radius: 10px;
+
+}    
+
 Button{
-    background-color: green;
+    background-color: #36F57F;
 }
