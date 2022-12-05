@@ -4,13 +4,13 @@
 <header>
     <!-- Jumbotron -->
     <div class="p-5 text-center bg-dark">
-        <h1 class="mb-3 bg-dark">want to remember your amazing achievments ?!!!</h1>
-        <h4 class="mb-3 bg-dark">sign up! !</h4>
+        <h1 class="mb-3 bg-dark">Welcome back - wanna add some deeds ?!!!</h1>
+        <h4 class="mb-3 bg-dark">Log In !</h4>
     </div>
     <!-- Jumbotron -->
 </header>
 
-<div class="content-section">
+<div class="content-section m-5">
     <form method="POST" action="">
         {{ form.hidden_tag() }}
         <fieldset class="form-group">
@@ -61,7 +61,7 @@
 
 </div>
 
-<div class="pt-3">
+<div class="pt-3 m-5">
     <small class="text-muted">
         Need an Account? <a class="ml-2" href="{{ url_for('register') }}">Sign Up Now </a>
     </small>

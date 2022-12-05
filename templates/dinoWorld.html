@@ -4,17 +4,34 @@
 <header>
     <!-- Jumbotron -->
  <div class="p-5 text-center bg-dark">
-   <h1 class="mb-3 bg-dark">Welcome to your Dinosaure World !!!</h1>
-   <h4 class="mb-3 bg-dark">here you are remembered and your deeds are not forgotten!</h4>
+   <h1 class="mb-3 bg-dark">Welcome to your Dinosaur World !!!</h1>
+   <h4 class="mb-3 bg-dark">here you are remembered , pampered and your deeds are not forgotten!</h4>
  </div>
+     <!-- Jumbotron -->
+</header>
+
+<main class="m-5">
+
+<div >
+  Hellu Dino-lover - here is your little deeds diary page. <br>
+  Again a small reminder: Your worth is not in what you do. <br>  
+  That is ancient Dino wisdom!!! <br> 
+  Yes, they went extingt, but you are alive and made it this far and that is amazing. <br> 
+  T-Rex is happy that you are here. <br>
+
+  T-Rex read somewhere that if people can hate others without knowing them and for no reason -  <br>
+    one can love others for no reason and without knowing them. 
+  T-Rex decided to do just that. <br>
+  So, feel free to add: today "I am loved by a T-Rex" to your diary any time. <br>  
+  And maybe that allready is something for today.  
+</div>  
  
     {% for post in posts %}
-
-   
-     <!-- Jumbotron -->
-   </header>
         <p> On this day: {{ post.date}} </p>
         <p> I did this: {{ post.deed }}</p>
         <h1> and thats why: I am fucking amazing</h1>
     {% endfor %}
+
+  </main>    
+
 {% endblock content%}
